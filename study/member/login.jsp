@@ -24,7 +24,8 @@
    //드라이버 로드!
    //모든 jar파일은 javaEE기반의 스팩으 따라서, 위치시켜야 한다.
    //스팩에 의하면 class파일과 jar는 WEB-INF라는 대문자로 된 보안된 디렉토리에 위치시켜야한다.
-   Class.forName("oracle.jdbc.driver.OracleDriver");
+   Class.forName("org.mariadb.jdbc.Driver");
+   out.print("드라이버 로드 성공");
 
 	// 접속
 	String url = "jdbc:oracle:thin:@localhost:1521:XE";
